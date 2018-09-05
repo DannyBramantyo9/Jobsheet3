@@ -5,23 +5,22 @@
  */
 package Praktikum;
 
-import java.util.Scanner;
-
 /**
  *
  * @author SMK TELKOM
  */
-public class Mapel extends Pengajar{
-     public String mapel;
+public class Waktu extends Mapel{
+        private String waktu;
     
-    public Mapel(String id, String nama, String mapel){
-        super(id, nama);
-        this.mapel = mapel;
+    public Waktu(String id, String nama, String mapel, String waktu){
+        super(id, nama, mapel);
+        this.waktu = waktu;
     }
     
     //override
-    public void ket(){
+    public void ket() {
         super.ket();
-        System.out.println("Mengajar Pelajaran : "+this.mapel);
+        System.out.println("Waktu Pelajaran : "+this.waktu);
+        
     }
 }
